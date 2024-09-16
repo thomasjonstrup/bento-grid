@@ -25,27 +25,27 @@ import IllustrationAiContent from '../assets/images/illustration-ai-content.webp
 		<meta name="description" content="Bento grid Frontend Mentor challenge to practice use of CSS Grid to create a grid of items">
 	</head>
 	<body class="font-primary bg-grey-100">
-		<div class="container mx-auto p-6 md:pt-16 grid gap-6 md:grid-cols-4 max-w-screen-lg">
-			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center">
-				<h1 class="text-white text-2xl font-medium">Social Media <span class="text-yellow-500">10x</span> Faster with AI</h1>
-				<Image src={IllustrationFiveStars} alt="AI illustration content image" />
+		<div class="container mx-auto p-6 md:pt-16 grid gap-6 md:grid-cols-4 nd:row-span-2 max-w-screen-lg">
+			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center col-span-2 row-span-1">
+				<h1 class="text-white text-5xl font-medium">Social Media <span class="text-yellow-500">10x</span> Faster with AI</h1>
+				<Image src={IllustrationFiveStars} alt="AI illustration content image" class="w-1/2" />
 				<p class="text-white text-sm">Over 4,000 5-star reviews</p>
 			</div>
 			<div class="rounded-lg bg-white p-4 flex gap-3 justify-center flex-col items-center">
 				<Image src={IllustrationMultiplePlatforms} alt="AI illustration content image" />
 				<h2 class="text-black text-2xl font-medium">Manage multiple accounts and platforms.</h2>
 			</div>
-			<div class="rounded-lg bg-yellow-500 pt-4 px-4 flex gap-3 justify-center flex-col items-center">
+			<div class="rounded-lg bg-yellow-500 pt-4 px-4 flex gap-3 md:row-span-1 justify-center flex-col items-center">
 				<h2 class="text-black text-2xl font-medium">Maintain a consistent posting schedule.</h2>
 				<Image src={IllustrationConsistenSchedule} alt="AI illustration content image" />
 			</div>
-			<div class="rounded-lg bg-purple-100 p-4 flex gap-3 justify-center flex-col items-center">
-				<h2 class="text-black text-2xl font-medium">Schedule to social media.</h2>
+			<div class="rounded-lg md:row-span-3 bg-purple-100 p-4 flex gap-3 justify-center flex-col items-center">
+				<h2 class="text-black text-2xl font-medium row-span-2">Schedule to social media.</h2>
 				<Image src={IllustrationSchedulePost} alt="AI illustration content image" />
 				<p class="text-black">Optimize post timings to publish content at the perfect time for your audience.</p>
 			</div>
-			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center">
-				<Image src={IllustrationGrowFollowers} alt="AI illustration content image" />
+			<div class="rounded-lg bg-purple-500 p-4 col-span-2 row-span-1 flex gap-3 justify-center flex-col md:flex-row md:justify-between items-center text-center">
+				<Image src={IllustrationGrowFollowers} alt="AI illustration content image" class="w-1/2" />
 				<h2 class="text-white text-2xl font-medium">Grow followers with non-stop content.</h2>
 			</div>
 			<div class="rounded-lg bg-white p-4 flex gap-3 flex-col">
