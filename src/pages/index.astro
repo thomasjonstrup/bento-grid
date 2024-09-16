@@ -9,6 +9,9 @@ import IllustrationMultiplePlatforms from '../assets/images/illustration-multipl
 import IllustrationConsistenSchedule from '../assets/images/illustration-consistent-schedule.webp';
 import IllustrationGrowFollowers from '../assets/images/illustration-grow-followers.webp';
 import IllustrationSchedulePost from '../assets/images/illustration-schedule-posts.webp';
+import IllustrationAudienceGrowth from '../assets/images/illustration-audience-growth.webp';
+import IllustrationCreatePost from '../assets/images/illustration-create-post.webp';
+import IllustrationAiContent from '../assets/images/illustration-ai-content.webp';
 
 ---
 
@@ -18,59 +21,52 @@ import IllustrationSchedulePost from '../assets/images/illustration-schedule-pos
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		  <title>Frontend Mentor | Bento grid</title>
+		<title>Frontend Mentor | Bento grid</title>
+		<meta name="description" content="Bento grid Frontend Mentor challenge to practice use of CSS Grid to create a grid of items">
 	</head>
 	<body class="font-primary bg-grey-100">
-		<div class="container mx-auto p-4 grid gap-4">
-			<div class="rounded-md bg-purple-500 p-4 flex justify-center flex-col items-center text-center">
-				<h1 class="text-white text-2xl">Social Media <span class="text-yellow-500">10x</span> Faster with AI</h1>
+		<div class="container mx-auto p-6 grid gap-6">
+			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center">
+				<h1 class="text-white text-2xl font-medium">Social Media <span class="text-yellow-500">10x</span> Faster with AI</h1>
 				<Image src={IllustrationFiveStars} alt="AI illustration content image" />
 				<p class="text-white text-sm">Over 4,000 5-star reviews</p>
 			</div>
-			<div class="rounded-md bg-white p-4 flex justify-center flex-col items-center text-center">
+			<div class="rounded-lg bg-white p-4 flex gap-3 justify-center flex-col items-center">
 				<Image src={IllustrationMultiplePlatforms} alt="AI illustration content image" />
-				<h2 class="text-black text-2xl">Manage multiple accounts and platforms.</h2>
+				<h2 class="text-black text-2xl font-medium">Manage multiple accounts and platforms.</h2>
 			</div>
-			<div class="rounded-md bg-yellow-500 p-4 flex justify-center flex-col items-center text-center">
-				<h2 class="text-black text-2xl">Maintain a consistent posting schedule.</h2>
+			<div class="rounded-lg bg-yellow-500 pt-4 px-4 flex gap-3 justify-center flex-col items-center">
+				<h2 class="text-black text-2xl font-medium">Maintain a consistent posting schedule.</h2>
 				<Image src={IllustrationConsistenSchedule} alt="AI illustration content image" />
 			</div>
-			<div class="rounded-md bg-purple-100 p-4 flex justify-center flex-col items-center text-center">
-				<h2 class="text-black text-2xl">Schedule to social media.</h2>
+			<div class="rounded-lg bg-purple-100 p-4 flex gap-3 justify-center flex-col items-center">
+				<h2 class="text-black text-2xl font-medium">Schedule to social media.</h2>
 				<Image src={IllustrationSchedulePost} alt="AI illustration content image" />
 				<p class="text-black">Optimize post timings to publish content at the perfect time for your audience.</p>
 			</div>
-			<div class="rounded-md bg-purple-500 p-4 flex justify-center flex-col items-center text-center">
+			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center">
 				<Image src={IllustrationGrowFollowers} alt="AI illustration content image" />
-				<h2 class="text-white text-2xl">Grow followers with non-stop content.</h2>
+				<h2 class="text-white text-2xl font-medium">Grow followers with non-stop content.</h2>
+			</div>
+			<div class="rounded-lg bg-white p-4 flex gap-3 flex-col">
+				<h2 class="text-black text-2xl font-medium">>56%</h2>
+				<Image src={IllustrationAudienceGrowth} alt="AI illustration content image" />
+				<p>faster audience growth</p>
+			</div>
+			<div class="rounded-lg bg-yellow-100 p-4 flex gap-3 flex-col">
+				<h2 class="text-black text-2xl font-medium">Create and schedule content <span class="text-purple-500">quicker.</span></h2>
+				<Image src={IllustrationCreatePost} alt="AI illustration content image" />
+			</div>
+			<div class="rounded-lg bg-yellow-500 p-4 flex gap-3 flex-col">
+				<h2 class="text-black text-2xl font-medium">Write your content using AI.</h2>
+				<Image src={IllustrationAiContent} alt="AI illustration content image" />
 			</div>
 		</div>
 	</body>
-	<footer class="container mx-auto p-4">
-		<p class="text-xs">
+	<footer class="container mx-auto p-6">
+		<p class="text-xs text-center">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-			Coded by <a href="https://github.com/thomasjonstrup">Thomas Jonstrup</a>.
+			Coded by <a class="text-purple-500 underline" href="https://github.com/thomasjonstrup">Thomas Jonstrup</a>.
 		</p>
 	</footer>
 </html>
-
-<!--
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
-
-  Manage multiple accounts and platforms.
-
-  Maintain a consistent posting schedule.
-
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
-
-  Grow followers with non-stop content.
-
-  >56% faster audience growth
-
-  Create and schedule content quicker.
-
-  Write your content using AI.
-
--->
