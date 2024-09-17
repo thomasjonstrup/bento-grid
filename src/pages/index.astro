@@ -3,7 +3,6 @@
 import '@fontsource-variable/dm-sans';
 
 import { Image } from 'astro:assets';
-import IllustrationAIContent from '../assets/images/illustration-ai-content.webp';
 import IllustrationFiveStars from '../assets/images/illustration-five-stars.webp';
 import IllustrationMultiplePlatforms from '../assets/images/illustration-multiple-platforms.webp';
 import IllustrationConsistenSchedule from '../assets/images/illustration-consistent-schedule.webp';
@@ -11,7 +10,7 @@ import IllustrationGrowFollowers from '../assets/images/illustration-grow-follow
 import IllustrationSchedulePost from '../assets/images/illustration-schedule-posts.webp';
 import IllustrationAudienceGrowth from '../assets/images/illustration-audience-growth.webp';
 import IllustrationCreatePost from '../assets/images/illustration-create-post.webp';
-import IllustrationAiContent from '../assets/images/illustration-ai-content.webp';
+import IllustrationAIContent from '../assets/images/illustration-ai-content.webp';
 
 ---
 
@@ -25,41 +24,45 @@ import IllustrationAiContent from '../assets/images/illustration-ai-content.webp
 		<meta name="description" content="Bento grid Frontend Mentor challenge to practice use of CSS Grid to create a grid of items">
 	</head>
 	<body class="font-primary bg-grey-100">
-		<div class="container mx-auto p-6 md:pt-16 grid gap-6 md:grid-cols-4 nd:row-span-2 max-w-screen-lg">
-			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col items-center text-center col-span-2 row-span-1">
-				<h1 class="text-white text-5xl font-medium">Social Media <span class="text-yellow-500">10x</span> Faster with AI</h1>
+		<div class="container mx-auto p-6 md:pt-16 grid gap-8 md:grid-cols-8 max-w-screen-lg">
+			<div class="rounded-lg bg-purple-500 p-8 flex gap-3 justify-center flex-col items-center text-center col-span-8 md:col-span-4 md:row-start-1 md:row-span-2 md:col-start-3">
+				<h1 class="text-white text-4xl font-medium lg:text-5xl">
+					Social Media
+					<span class="text-yellow-500">10x</span>
+					<i>Faster</i> with AI
+				</h1>
 				<Image src={IllustrationFiveStars} alt="AI illustration content image" class="w-1/2" />
 				<p class="text-white text-sm">Over 4,000 5-star reviews</p>
 			</div>
-			<div class="rounded-lg bg-white p-4 flex gap-3 justify-center flex-col items-center">
+			<div class="rounded-lg bg-white p-4 flex gap-3 justify-center flex-col items-center col-span-8 md:col-span-2 md:col-start-3 md:row-span-2 md:row-start-3">
 				<Image src={IllustrationMultiplePlatforms} alt="AI illustration content image" />
-				<h2 class="text-black text-2xl font-medium">Manage multiple accounts and platforms.</h2>
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">Manage multiple accounts and platforms.</h2>
 			</div>
-			<div class="rounded-lg bg-yellow-500 pt-4 px-4 flex gap-3 md:row-span-1 justify-center flex-col items-center">
-				<h2 class="text-black text-2xl font-medium">Maintain a consistent posting schedule.</h2>
+			<div class="rounded-lg bg-yellow-500 pt-4 px-4 flex gap-3 justify-center flex-col items-center col-span-8 md:col-span-2 md:col-start-5 md:row-span-2 md:row-start-3">
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">Maintain a consistent posting schedule.</h2>
 				<Image src={IllustrationConsistenSchedule} alt="AI illustration content image" />
 			</div>
-			<div class="rounded-lg md:row-span-3 bg-purple-100 p-4 flex gap-3 justify-center flex-col items-center">
-				<h2 class="text-black text-2xl font-medium row-span-2">Schedule to social media.</h2>
-				<Image src={IllustrationSchedulePost} alt="AI illustration content image" />
+			<div class="rounded-lg bg-purple-100 p-4 flex gap-3 justify-center flex-col items-center col-span-8 md:col-span-2 md:row-span-4 md:row-start-1 md:col-start-7">
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">Schedule to social media.</h2>
+				<Image src={IllustrationSchedulePost} class="w-full" alt="AI illustration content image" />
 				<p class="text-black">Optimize post timings to publish content at the perfect time for your audience.</p>
 			</div>
-			<div class="rounded-lg bg-purple-500 p-4 col-span-2 row-span-1 flex gap-3 justify-center flex-col md:flex-row md:justify-between items-center text-center">
+			<div class="rounded-lg bg-purple-500 p-4 flex gap-3 justify-center flex-col col-span-8 md:flex-row md:justify-between items-center text-center md:col-span-4 md:col-start-5 md:row-span-2 md:row-start-5 md:flex-row5">
 				<Image src={IllustrationGrowFollowers} alt="AI illustration content image" class="w-1/2" />
-				<h2 class="text-white text-2xl font-medium">Grow followers with non-stop content.</h2>
+				<h2 class="text-white text-3xl lg:text-3xl font-medium">Grow followers with non-stop content.</h2>
 			</div>
-			<div class="rounded-lg bg-white p-4 flex gap-3 flex-col">
-				<h2 class="text-black text-2xl font-medium">>56%</h2>
+			<div class="rounded-lg bg-white p-4 flex gap-3 flex-col col-span-8 md:col-start-3 md:row-span-2 md:col-span-2 md:row-start-5">
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">>56%</h2>
 				<Image src={IllustrationAudienceGrowth} alt="AI illustration content image" />
 				<p>faster audience growth</p>
 			</div>
-			<div class="rounded-lg bg-yellow-100 p-4 flex gap-3 flex-col">
-				<h2 class="text-black text-2xl font-medium">Create and schedule content <span class="text-purple-500">quicker.</span></h2>
+			<div class="rounded-lg bg-yellow-100 p-4 flex gap-3 flex-col col-span-8 md:col-span-2 md:col-start-1 md:row-start-1 md:row-span-3 md:py-14">
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">Create and schedule content <span class="text-purple-500">quicker.</span></h2>
 				<Image src={IllustrationCreatePost} alt="AI illustration content image" />
 			</div>
-			<div class="rounded-lg bg-yellow-500 p-4 flex gap-3 flex-col">
-				<h2 class="text-black text-2xl font-medium">Write your content using AI.</h2>
-				<Image src={IllustrationAiContent} alt="AI illustration content image" />
+			<div class="rounded-lg bg-yellow-500 p-4 flex gap-3 flex-col col-span-8 md:col-span-2 md:col-start-1 md:row-start-4 md:row-span-3">
+				<h2 class="text-black text-2xl lg:text-3xl font-medium">Write your content using AI.</h2>
+				<Image src={IllustrationAIContent} alt="AI illustration content image" />
 			</div>
 		</div>
 	</body>
