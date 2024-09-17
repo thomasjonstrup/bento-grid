@@ -1,4 +1,6 @@
-# Astro Starter Kit: Minimal
+# Frontend Mentor | Bento grid
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4d0988ee-f848-481a-a7c5-4ad0b80282e0/deploy-status)](https://app.netlify.com/sites/bento-grid-tj/deploys)
 
 ```sh
 npm create astro@latest -- --template minimal
